@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: 350px;
+    min-height: 350px;
+    margin-top: 200px;
+    background-color: #000;
+    color: white;
+}
+
+.action,
+.description {
+    font-size: 1em;
+    color: grey;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.button {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: none;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 135px;
+    height: 35px;
+}
+.wrapperButton{
+    display: flex;
+    margin-top: 200px;
+    margin-left: -50px;
+}
+.nextButton, .prevButton {
+    width: 50px;
+    height: 35px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+}
+.prevButton{
+    color: #000;
+    background-color: #fff;
+}

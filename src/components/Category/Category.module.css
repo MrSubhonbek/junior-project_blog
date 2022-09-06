@@ -1,0 +1,32 @@
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.title{
+    font-size: 1.5em;
+}
+.buttons{
+    display: flex;
+    
+}
+.prevButton,.nextButton{
+    width: 50px;
+    height: 35px;
+    margin-left: 5px;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
