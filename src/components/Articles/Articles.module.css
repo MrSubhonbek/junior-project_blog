@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    margin-top: 20px;
+}
+.img{
+    min-width: 250px;
+    height: 250px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.hashtag{
+    font-size: 0.7em;
+    color: gray;
+}
+.title{
+    font-size: 2.5em;
+}
+.text{
+    color: gray;
+}
+.readMe {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 20px;
+    width: 135px;
+    height: 35px;
+}

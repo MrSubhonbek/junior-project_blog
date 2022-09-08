@@ -7,10 +7,22 @@
     padding: 0 150px;
     box-sizing: border-box;
 }
+
 .content {
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 0 150px;
     box-sizing: border-box;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 150px;
+    box-sizing: border-box;
+    color: white;
+}
+.article span {
+    font-size: 2em;
 }

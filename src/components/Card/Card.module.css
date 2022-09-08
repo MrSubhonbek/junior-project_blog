@@ -5,12 +5,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
     background-color: #fff;
     color: #000;
+    cursor: pointer;
+    transition: 1s all;
 }
 
 .wrapper {
     width: 50px;
     margin-top: 10px;
     border: solid 1px #000;
+}
+
+.card:hover {
+    transform: scale(1.5);
 }
