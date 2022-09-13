@@ -1,0 +1,33 @@
+.head{
+    width: 100%;
+    height: 600px;
+    background-color: #949799;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    box-sizing: border-box;
+    color: white;
+}
+.wrapper {
+    background-color: #000;
+    margin-top: 370px;
+    padding: 30px 300px;
+    box-sizing: border-box;
+    height: 230px;
+}
+.title{
+    font-size: 2.7em;
+    text-align: center;
+}
+.hashtagTime {
+    display: flex;
+    margin-top: 20px;
+    color: gray;
+}
+.categoryName {
+    margin-right: 20px;
+}
+.line {
+    border-bottom: solid 2px white;
+    margin-top: 30px;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
-import { AboutMe } from '../../components/AboutMe/AboutMe'
-import { Articles } from '../../components/Articles/Articles'
-import { Category } from '../../components/Category/Category'
+import { Articles } from '../../components/HomePage/Articles/Articles'
+import { Category } from '../../components/HomePage/Category/Category'
 import { Footer } from '../../components/Footer/Footer'
 import { Header } from '../../components/Header/Header'
-import { InfoMain } from '../../components/Info/InfoMain'
+import { AboutMe } from '../../components/HomePage/AboutMe/AboutMe'
+import { InfoMain } from '../../components/HomePage/Info/InfoMain'
 import s from './Home.module.css'
 
 const data = [{
@@ -33,7 +33,6 @@ export const Home = () => {
     return (
         <React.StrictMode>
             <div className={s.head}>
-                <Header />
                 <InfoMain />
             </div>
             <div className={s.content}>
@@ -46,7 +45,6 @@ export const Home = () => {
                 </div>
                 <AboutMe />
             </div>
-            <Footer />
         </React.StrictMode>
     )
 }

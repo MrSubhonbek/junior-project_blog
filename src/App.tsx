@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
 import { Home } from './pages/Home/Home';
+import { SingleArticle } from './pages/Single Article/SingleArticle';
 
 function App() {
   return (
     <React.StrictMode>
-      <Home/>
+      <Header/>
+      <SingleArticle/>
+      <Footer />
     </React.StrictMode>
   );
 }
