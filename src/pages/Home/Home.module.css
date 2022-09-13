@@ -18,7 +18,7 @@
 
 .article {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     padding: 70px 150px;
     box-sizing: border-box;
     color: white;
