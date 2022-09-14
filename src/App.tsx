@@ -5,14 +5,13 @@ import { Header } from './components/Header/Header';
 import { Home } from './pages/Home/Home';
 import { SingleArticle } from './pages/Single Article/SingleArticle';
 
-function App() {
+export const App = () => {
   return (
     <React.StrictMode>
       <Header/>
-      <SingleArticle/>
+      {/* <Home/> */}
+      <SingleArticle id={0}/>
       <Footer />
     </React.StrictMode>
   );
 }
-
-export default App;

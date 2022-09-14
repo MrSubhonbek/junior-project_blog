@@ -1,20 +1,15 @@
 import React from 'react'
+import { DescriptionsType } from '../../../store/interface'
 import s from './InfoMain.module.css'
 
-const place = {
-    action: 'Travel',
-    title: 'When Is The Best Time of Year  To Visit Japan',
-    description: 'The good news for travelers is that there is no single best time of your  to travel to Japan...'
-}
-
-export const InfoMain = () => {
+export const InfoMain:React.FC<DescriptionsType> = ({action, title, shortText}) => {
     return (
         <React.StrictMode>
             <div className={s.wrapper}>
                 <div className={s.box}>
-                    <div className={s.action}>{place.action}</div>
-                    <div className={s.title}>{place.title}</div>
-                    <div className={s.description}>{place.description}</div>
+                    <div className={s.action}>{action}</div>
+                    <div className={s.title}>{title}</div>
+                    <div className={s.description}>{shortText}</div>
                     <button className={s.button}>Read more</button>
                 </div>
                 <div className={s.wrapperButton}>

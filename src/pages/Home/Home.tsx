@@ -4,14 +4,18 @@ import { Category } from '../../components/HomePage/Category/Category'
 import { AboutMe } from '../../components/HomePage/AboutMe/AboutMe'
 import { InfoMain } from '../../components/HomePage/Info/InfoMain'
 import s from './Home.module.css'
-import { dataHome } from '../../store/data'
+import { themes } from '../../store/data'
 
 export const Home = () => {
-    const articles = dataHome.map(elem => { return (<Articles {...elem} />) })
+    const articles = themes.map((elem, index) => {
+        return (
+            <Articles key={index} {...elem.descriptions} />
+        )
+    })
     return (
         <React.StrictMode>
             <div className={s.head}>
-                <InfoMain />
+                <InfoMain {...themes[0].descriptions}/>
             </div>
             <div className={s.content}>
                 <Category />
