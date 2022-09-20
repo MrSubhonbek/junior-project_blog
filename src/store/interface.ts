@@ -1,5 +1,6 @@
 
 export type DescriptionsType = {
+    id:number;
     action: string;
     title: string;
     shortText: string;

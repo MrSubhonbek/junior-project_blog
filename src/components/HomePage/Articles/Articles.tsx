@@ -3,13 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { Endpoints } from '../../../shared/constants';
 import { DescriptionsType } from '../../../store/interface'
 import s from './Articles.module.css'
-export const Articles: React.FC<DescriptionsType> = ({ img, hashtag, title, shortText }) => {
+export const Articles: React.FC<DescriptionsType> = ({ img, hashtag, title, shortText, id }) => {
+
   const navigate = useNavigate();
+
   const clickArticleHandler = () => {
-    navigate(Endpoints.Article)
+    navigate(Endpoints.Article + `/${id}`)
   }
+
   return (
-    <React.StrictMode>
       <div className={s.card}>
         <div className={s.img}>{img}</div>
         <div className={s.description}>
@@ -19,6 +21,5 @@ export const Articles: React.FC<DescriptionsType> = ({ img, hashtag, title, shor
           <button className={s.readMe} onClick={clickArticleHandler}>Read more</button>
         </div>
       </div>
-    </React.StrictMode>
   )
 }

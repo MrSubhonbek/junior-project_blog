@@ -8,8 +8,8 @@ import { Header } from './components/Header/Header';
 export const App = () => {
   return (
     <BrowserRouter>
-      <Header/>
-      <AppRoutes id={1}/>
+      <Header />
+      <AppRoutes />
       <Footer />
     </BrowserRouter>
   );
