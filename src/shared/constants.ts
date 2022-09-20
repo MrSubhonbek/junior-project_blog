@@ -1,5 +1,6 @@
 export enum Endpoints {
     Home = '/',
     Article = '/article',
-    ArticleId = '/:articleId'
+    ArticleId = '/:articleId',
+    AboutMe = '/aboutMe'
   }

@@ -8,7 +8,7 @@ export const InfoMain: React.FC<DescriptionsType> = ({ action, title, shortText 
     const navigate = useNavigate();
 
     const clickArticleHandler = () => {
-        navigate(Endpoints.Article)
+        navigate(Endpoints.Article + '/0')
     }
     return (
         <React.StrictMode>
