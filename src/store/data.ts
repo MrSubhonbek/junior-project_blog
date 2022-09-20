@@ -32,7 +32,7 @@ export const themes = [
                     'Winter in Japan offers amazing seafood, incredible onsen (hot springs) experiences, not to mention some of the best powder in the world for skiing and snowboarding.',
                     'And if you don’t have time to read the full article, but are looking for a sense of which month would be best for you, here is a brief overview to help you decide when to visit.'
                 ],
-                img: ''
+                img: 'https://'
             },
         ]
 },

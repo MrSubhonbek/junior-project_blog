@@ -1,17 +1,16 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import { AppRoutes } from './AppRoutes';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
-import { Home } from './pages/Home/Home';
-import { SingleArticle } from './pages/Single Article/SingleArticle';
 
 export const App = () => {
   return (
-    <React.StrictMode>
+    <BrowserRouter>
       <Header/>
-      {/* <Home/> */}
-      <SingleArticle id={0}/>
+      <AppRoutes id={1}/>
       <Footer />
-    </React.StrictMode>
+    </BrowserRouter>
   );
 }
